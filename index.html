@@ -2,33 +2,89 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KostKinclong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KostKinclong | Jasa Pembersihan Kamar Kost dan Apartemen</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header id="header-section" data-role="CEO">
-    <div class="brand">KostKinclong</div>
-    <nav>
-      <a href="#hero-section">Beranda</a>
-      <a href="#catalog-section">Katalog</a>
-      <a href="#calc-section">Kalkulator</a>
-    </nav>
-  </header>
+<!-- CEO -->
+<header id="header-section" data-role="CEO">
+  <h1 class="brand">KostKinclong</h1>
+  <nav>
+    <a href="#hero-section">Beranda</a>
+    <a href="#catalog-section">Katalog</a>
+    <a href="#calc-section">Kalkulator</a>
+  </nav>
+</header>
 
-  <!-- PM 1: tempel section hero di sini -->
+<!-- PM 1: Aryabima -->
+<section id="hero-section" data-role="PM">
+    <h2 class="hero-title">Kost Kinclong, Hidup Lebih Nyaman!</h2>
+    <p class="hero-subtitle">Nikmati kamar kost dan apartemen yang bersih, rapi, dan nyaman tanpa repot. KostKinclong hadir dengan layanan pembersihan panggilan yang praktis, profesional, dan siap membantu kamu kapan saja.</p>
+    <ul class="hero-benefits">
+        <li>Pembersihan menyeluruh dan berkualitas</li>
+        <li>Booking mudah dan fleksibel secara online</li>
+        <li>Harga terjangkau dengan hasil maksimal</li>
+    </ul>
+    <a class="cta-button" href="#calc-section">Hitung Biaya Sekarang</a>
+</section>
 
-  <!-- PM 2: tempel section katalog di sini -->
+<!-- PM 2: Lutfya -->
+<section id="catalog-section" data-role="PM">
+  <h2 class="section-title">Katalog Paket Pembersihan KostKinclong</h2>
+  <div class="catalog-grid">
+    <article class="package-card">
+      <h3 class="package-name">Paket Kamar Kost</h3>
+      <p class="package-desc">Cocok untuk kamar kost ukuran standar. Meliputi menyapu dan mengepel lantai, membersihkan debu pada perabot, merapikan tempat tidur, serta membersihkan kamar mandi dalam. Kamar jadi segar dan nyaman ditempati kembali.</p>
+      <p class="package-price">Rp75.000 / ruangan</p>
+      <p class="package-promo">Gunakan kode promo KINCLONG10 untuk diskon 10%. Diskon otomatis berlaku jika memesan minimal 3 ruangan.</p>
+    </article>
+    <article class="package-card">
+      <h3 class="package-name">Paket Unit Studio</h3>
+      <p class="package-desc">Dirancang untuk apartemen tipe studio. Meliputi pembersihan lantai, jendela dan kaca bagian dalam, dapur mini, kamar mandi, serta area tidur dan ruang santai. Hunian terasa lebih rapi, higienis, dan siap dipakai.</p>
+      <p class="package-price">Rp150.000 / ruangan</p>
+      <p class="package-promo">Gunakan kode promo KINCLONG10 untuk diskon 10%. Diskon otomatis berlaku jika memesan minimal 3 ruangan.</p>
+    </article>
+    <article class="package-card">
+      <h3 class="package-name">Paket Pembersihan Menyeluruh</h3>
+      <p class="package-desc">Pembersihan total hingga ke sudut tersembunyi. Meliputi penghilangan noda dan debu membandel, pembersihan kasur dan sofa, sterilisasi kamar mandi, pembersihan dapur dan perangkat elektronik rumah tangga, serta penyemprotan pewangi ruangan. Ideal sebelum pindahan atau setelah lama tidak dihuni.</p>
+      <p class="package-price">Rp300.000 / ruangan</p>
+      <p class="package-promo">Gunakan kode promo KINCLONG10 untuk diskon 10%. Diskon otomatis berlaku jika memesan minimal 3 ruangan.</p>
+    </article>
+  </div>
+</section>
 
-  <!-- SE: tempel section kalkulator di sini -->
+<!-- SE: Alfiyanti -->
+<section id="calc-section" data-role="SE">
+  <h2 class="section-title">Simulasi Biaya</h2>
+  <div class="calc-box">
+    <label for="package">Pilih Paket</label>
+    <select id="package">
+      <option value="75000">Paket Kamar Kost - Rp75.000</option>
+      <option value="150000">Paket Unit Studio - Rp150.000</option>
+      <option value="300000">Paket Pembersihan Menyeluruh - Rp300.000</option>
+    </select>
 
-  <footer id="footer-section" data-role="CEO">
-    <p>&copy; 2026 KostKinclong. Hak cipta dilindungi.</p>
-    <p>Kelas WebDev C | Kelompok 4</p>
-    <p>Tim: Reynard Shaquillo, Muhammad Aryabima Hardy, Lutfya Najiah, Sheila Ardelia, Ihsan Fadhillah Siregar, Alfiyanti Wulan Sari</p>
-  </footer>
+    <label for="qty">Jumlah Ruangan</label>
+    <input id="qty" type="number" min="1" value="1">
 
-  <script src="script.js"></script>
+    <label for="promo">Kode Promo</label>
+    <input id="promo" type="text" placeholder="Masukkan kode promo (mis. KINCLONG10)">
+
+    <button id="calc-btn" type="button">Hitung</button>
+
+    <div id="result"></div>
+  </div>
+</section>
+
+<!-- CEO -->
+<footer id="footer-section" data-role="CEO">
+  <p>&copy; 2026 KostKinclong. Hak cipta dilindungi.</p>
+  <p>Kelas WebDev C | Kelompok 4</p>
+  <p>Tim: Reynard Shaquillo, Muhammad Aryabima Hardy, Lutfya Najiah, Sheila Ardelia, Ihsan Fadhillah Siregar, Alfiyanti Wulan Sari</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
